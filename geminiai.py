@@ -2,9 +2,8 @@ import re
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from google_api_key import GOOGLE_API_KEY
 import os
-os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
+os.environ['GOOGLE_API_KEY'] = "AIzaSyApolP1Jwm5FJoQAkBBxQg_oC5diZ1H6qE"
 class DarkPatternClassifier:
     def __init__(self):
         self.model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=1)
